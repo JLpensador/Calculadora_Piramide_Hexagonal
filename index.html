@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,4 +66,73 @@
   </div>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora  de Pirâmide Hexagonal</title>
+
+    <script defer src="src/js/doi.js"></script>
+
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+    <link rel="shortcut icon" href="src/image/calculation.png-removebg-preview.ico" type="image/x-icon">
+</head>
+<body>
+  <input type="checkbox" id="dark-mode" class="bomdia">
+  <label for="dark-mode" class="dark-mode"></label>
+  <div class="background">
+
+    <div class="box">
+      <form action="">
+        <fieldset>
+          <legend>Calculadora de <br> Pirâmide Hexagonal</legend>
+          <br><br>
+          <div class="inputBox">
+            <input type="number" id="base" class="inputUser" required>
+            <label for="base" class="labelInput">Comprimento da base</label>
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input type="number" id="altura" class="inputUser" required>
+            <label for="altura" class="labelInput">Altura</label>
+          </div>
+          <br><br>
+
+          <input type="button" value="Calcular" onclick="calcular()" class="calcular">
+        <br><br>
+        <p>Área da base: <span id="areaBase"></span></p>
+        <p>Área lateral: <span id="areaLateral"></span></p>
+        <p>Área da superfície: <span id="areaSuperficie"></span></p>
+        <p>Volume: <span id="volume"></span></p>
+          
+          <br><br>
+
+          <input type="reset" id="reset">
+          <label for="reset"></label
+        </fieldset>
+      </form>
+
+    </div>
+
+    <aside class="menu-lateral">
+      <ul>
+
+        <a href="https://github.com/JLpensador" target="_blank">
+          <img src="src/image/github.svg" alt="GitHub" class="icone">
+        </a>
+
+        <a href="https://www.linkedin.com/in/joão-luiz-borges-morais-242751268/" target="_blank">
+          <img src="src/image/linkedin-in.svg" alt="LinkedIn" class="icone">
+        </a>
+
+    </aside>
+
+    <img src="src/image/calculation.png-removebg-preview.png" alt="Cerberus Logo" class="cerberus">
+  </div>
+</body>
+
+>>>>>>> c34e11b2eb64cac81e6cc897fa364d400557fb57
 </html>

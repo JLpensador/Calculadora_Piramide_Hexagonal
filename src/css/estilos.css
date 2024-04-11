@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 body {
@@ -239,3 +240,246 @@ input:checked + .inputUser:focus ~ .labelInput,
 .inputUser:valid ~ .labelInput {
   color: #840606;
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: linear-gradient(to left, hsl(330, 91%, 27%), #0080b4); */
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-left: 0px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.cerberus {
+  position: sticky;
+  width: 10%;
+}
+
+
+img {
+  position: relative;
+  top: 1%;
+  left: 94%;
+  width: 4%;
+}
+
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 15px;
+  /* width: 20%; */
+}
+
+fieldset {
+  border: 3px solid #520684;
+}
+
+legend {
+  border: 1px solid #e5ff00;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: #5c00d5;
+}
+
+#result{
+  font-size: larger;
+}
+
+#reset {
+  width: 50%;
+  padding: 1%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  width: 100%;
+}
+
+#reset:hover {
+  background-color: #840606;
+  cursor: pointer;
+}
+
+#reset:active {
+  box-shadow: inset -4px 4px 0 #3a3b4d;
+  font-size: 0.9rem;
+}
+
+
+.calcular {
+  width: 50%;
+  padding: 1%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  width: 100%;
+}
+
+.calcular:hover {
+  background-color: #8f7500;
+  cursor: pointer;
+}
+
+.calcular:active {
+  box-shadow: inset -4px 4px 0 #3a3b4d;
+  font-size: 0.9rem;
+}
+
+.menu-lateral{
+  position:fixed;
+  top: 0px;
+  right: 6%;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  }
+  
+  .menu-lateral ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  }
+  
+  .menu-lateral .icone{
+    width: 50px;
+  filter: invert(1);
+  transition: 0.3s ease-in-out;
+  }
+  
+  .menu-lateral .icone:hover{
+      transform: scale(1.2);
+  }
+  
+
+.dark-mode {
+  /* position: relative;
+  width: 90px;
+  height: 41px;
+  display: block;
+  background: #d9d9d9;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.3), inset 0px -5px 15px rgba(255,255,255,0.3); */
+  position: relative;
+  width: 99px;
+  height: 41px;
+  display: block;
+  background: #d9d9d9;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+  left: 10px;
+  top: 10px;
+}
+
+.dark-mode:after {
+  /* content: '';
+  position: absolute;
+  height: 33px;
+  width: 41px;
+  background: #f2f2f2;
+  border-radius: 100px;
+  top: 10px;
+  left: 10px;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
+  content: "";
+  position: absolute;
+  height: 57%;
+  width: 27%;
+  background: #f2f2f2;
+  border-radius: 100px;
+  top: 10px;
+  left: 4px;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bomdia:checked ~ .dark-mode:after {
+  left: 94px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.bomdia:checked ~ .dark-mode {
+  background: #000;
+}
+
+.bomdia {
+  display: none;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top left, hsl(280, 91%, 27%), #e5ff00);
+  z-index: -1;
+  transition: 0.5s;
+  margin-right: -42px;
+  margin-top: -40px;
+}
+
+/* input:checked + label + fieldset{
+  background: #ee0000;
+}  */
+
+input:checked + label + .background {
+  background-image: linear-gradient(to bottom left, hsl(280, 91%, 27%), #000000);
+}
+
+input:checked + .inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  color: #840606;
+}
+>>>>>>> c34e11b2eb64cac81e6cc897fa364d400557fb57
