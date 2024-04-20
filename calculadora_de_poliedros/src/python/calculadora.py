@@ -1,6 +1,3 @@
-
-import math
-
 def volume_of_polyhedron(edge_length, height):
     return (edge_length ** 2) * height / 3
 

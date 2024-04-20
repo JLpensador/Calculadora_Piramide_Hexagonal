@@ -9,7 +9,3 @@ const calculateVolume = () => {
 };
 edgeLengthInput.addEventListener("input", calculateVolume);
 heightInput.addEventListener("input", calculateVolume); 
-
-// const areaBase = 3 * Math.pow(ladoBase, 2) * Math.sqrt(3);
-//     const areaSuperficie = areaBase + 3 * ladoBase * altura;
-//     const volume = (areaBase * altura) / 3;

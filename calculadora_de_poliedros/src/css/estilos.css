@@ -1,6 +1,5 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* background-image: linear-gradient(to left, hsl(330, 91%, 27%), #0080b4); */
   background-color: rgba(255, 255, 255, 0.9);
   margin-left: 0px;
   margin-top: -1px;
@@ -9,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-.cerberus {
+.logo {
   position: sticky;
 }
 
@@ -30,7 +29,6 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 15px;
   border-radius: 15px;
-  /* width: 20%; */
 }
 
 fieldset {
@@ -132,14 +130,6 @@ legend {
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .dark-mode {
-  /* position: relative;
-  width: 90px;
-  height: 41px;
-  display: block;
-  background: #d9d9d9;
-  border-radius: 100px;
-  cursor: pointer;
-  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.3), inset 0px -5px 15px rgba(255,255,255,0.3); */
   position: relative;
   width: 99px;
   height: 41px;
@@ -154,16 +144,6 @@ legend {
 }
 
 .dark-mode:after {
-  /* content: '';
-  position: absolute;
-  height: 33px;
-  width: 41px;
-  background: #f2f2f2;
-  border-radius: 100px;
-  top: 10px;
-  left: 10px;
-  transition: 0.5s;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
   content: "";
   position: absolute;
   height: 57%;
@@ -176,17 +156,17 @@ legend {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.bomdia:checked ~ .dark-mode:after {
+.botão:checked ~ .dark-mode:after {
   left: 94px;
   transform: translateX(-100%);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
-.bomdia:checked ~ .dark-mode {
+.botão:checked ~ .dark-mode {
   background: #000;
 }
 
-.bomdia {
+.botão {
   display: none;
 }
 
@@ -200,10 +180,6 @@ legend {
   margin-right: -42px;
   margin-top: -40px;
 }
-
-/* input:checked + label + fieldset{
-  background: #ee0000;
-}  */
 
 input:checked + label + .background {
   background-image: linear-gradient(to bottom left, hsl(280, 91%, 27%), #000000);
