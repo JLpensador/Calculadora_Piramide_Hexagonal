@@ -176,11 +176,11 @@ legend {
 }
 
 .menu-lateral{
-  position:fixed;
+  position: fixed; 
   top: 0px;
-  right: 6%;
+  right: 90px;
   width: 80px;
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
   min-height: 100vh;
